@@ -1,3 +1,5 @@
+package com.example.miniproj.model;
+
 public class Coffee {
     private Long id;
     private String name;

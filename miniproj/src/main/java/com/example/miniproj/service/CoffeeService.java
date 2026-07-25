@@ -1,6 +1,6 @@
-package com.example.coffeemenu.service;
+package com.example.miniproj.service;
 
-import com.example.coffeemenu.model.Coffee;
+import com.example.miniproj.model.Coffee;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
