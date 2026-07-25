@@ -9,8 +9,8 @@
 ---
 
 ## 📄 รายงานผลการทดสอบ (Result & Discussion)
-สามารถดูรูปภาพผลการทดสอบ API ทั้ง 5 Endpoints (Expected Result) และคำตอบ Discussion ได้ที่ไฟล์นี้:
-👉 [คลิกเพื่อดูไฟล์ Lab05_Result_Discussion.pdf](./Lab05_Result_Discussion.pdf)
+รูปภาพผลการทดสอบ API ทั้ง 5 Endpoints (Expected Result) และคำตอบ Discussion ได้ที่ไฟล์นี้:
+(https://github.com/kitithoughts-bit/coffee-menu-api/blob/main/Lab05_Result%20%26%20%20Discussion%20.pdf)
 ---
 
 ## 🚀 วิธีการรันโปรเจกต์ (How to Run)
