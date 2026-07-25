@@ -3,6 +3,7 @@ package com.example.miniproj.controller;
 import com.example.miniproj.model.Coffee;
 import com.example.miniproj.service.CoffeeService;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
@@ -19,8 +20,8 @@ public class CoffeeController {
     }
 
     @GetMapping
-    public List<Coffee> getAllCoffee(){
-        return coffeeService.getAll(); 
+    public ResponseEntity<List<Coffee>> getAllCoffee(){
+        return ResponseEntity.ok(coffeeService.getAll()); 
     }
 
     @GetMapping("/{id}")
@@ -32,9 +33,9 @@ public class CoffeeController {
     }
 
     @PostMapping
-    public Coffee addCoffee(@RequestBody Coffee newCoffee){
-        return coffeeService.add(newCoffee);
-
+    public ResponseEntity<Coffee> addCoffee(@RequestBody Coffee newCoffee){
+        Coffee coffee = coffeeService.add(newCoffee);
+        return ResponseEntity.status(HttpStatus.CREATED).body(coffee);
     }
 
     @PutMapping("/{id}")
